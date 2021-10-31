@@ -15,10 +15,15 @@ admin.initializeApp({
 const db = getFirestore();
 
 const APP = express();
+
+// Enable CORs
 APP.use(cors());
+// Enable body parsing of JSON
 APP.use(express.json());
+
 const PORT = 3000;
 
+// Define API routes to get data from Firestore
 APP.get('/', (req, res) => {
     console.log("Get request for water level");
     const waterLeveldoc = db.collection('water').doc('ansync');
@@ -32,6 +37,8 @@ APP.post('/', (req, res) => {
 });
 
 APP.listen(PORT, () => console.log(`Backend Application listening at http://localhost:${PORT}`));
+
+// Firestore functions
 
 async function updateWaterlevel(newLevel, document, res) {
     await document.set({
