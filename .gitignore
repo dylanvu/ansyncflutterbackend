@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Google Firebase json
+ansyncflutter-firebase-adminsdk-h0uqf-140748fd92.json

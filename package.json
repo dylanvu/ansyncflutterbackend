@@ -1,0 +1,26 @@
+{
+  "name": "ansyncflutterbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vu-dylan/ansyncflutterbackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vu-dylan/ansyncflutterbackend/issues"
+  },
+  "homepage": "https://github.com/vu-dylan/ansyncflutterbackend#readme",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^10.0.0"
+  }
+}
