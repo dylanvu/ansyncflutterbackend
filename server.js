@@ -4,8 +4,8 @@ import cors from 'cors';
 import { getFirestore } from 'firebase-admin/firestore';
 import admin from 'firebase-admin';
 
+// ES6 imports not supported for JSONs, so use the old 'require' syntax to import firestore credentials
 const require = createRequire(import.meta.url);
-
 var serviceAccount = require('./ansyncflutter-firebase-adminsdk-h0uqf-140748fd92.json');
 
 admin.initializeApp({
